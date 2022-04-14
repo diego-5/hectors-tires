@@ -2,19 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: helvetica;
+    font-family: 'Bitter', serif;;
     text-decoration: none;
     list-style: none;
+    scrollbar-width: 0px;
 }
 body, html {
     font-size: 16px;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type:y mandatory;
 }
 body{
     background-color: rgb(255, 243, 175);
 }
 .background-img{
-   scroll-snap-align: center;
+   max-height: 100vh;
+   overflow: hidden;
 }
 .nav-bar{
     display: flex;
@@ -48,21 +50,123 @@ ul a:hover{
     background-color: antiquewhite;
     color: black;
 }
+.shop-img{
+    display: flex;
+    align-items: center;
+    background: url(/images/getts.webp) no-repeat center fixed;
+    background-size: cover;
+    height: 100vh;
+    width:100%;
+}
 .about-us-container{
     display: flex;
     height: 100vh;
     width: 100%;
-    padding: 100px;
-    justify-content: center;
-    scroll-snap-align: center;
+    flex-direction: column;
+    
+    
+}
+.about-image-container{
+    display: flex;
+    align-items: center;
+    background: url(/images/tire-wall.jpg) no-repeat center fixed;
+    background-size: cover;
+    height: 70%;
+    width:100%;
+    flex-wrap: wrap;
+    
+
 }
 .about-us{
-    
-    background-color: white;
-    width: 60%;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.082);
+    color: white;
+    width: 50%;
+    height: 200px;
     border-radius: 10px;
-    box-shadow: 10px black;
+    margin-top: 200px;
+    margin-bottom: auto;
     align-items: center;
+    overflow: hidden;
 }
+.specials-btn {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 5px;
+    background-color: rgba(220, 0, 0, 1);
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    align-self: center;
+}
+
+.specials-btn:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.specials-btn:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+.about-foot{
+    flex-shrink: 0;
+    background-color: white;
+    height:90vh;
+    width: 100%;
+}
+
+.brand-img{
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+    max-width: 994px;
+    max-height: 650px;
+}
+.about-us > h2{
+    font-size: 30px;
+    text-align: left;
+    padding: 20px;
+}
+.about-us > p{
+    font-family: 'Ruda', sans-serif;
+    font-size: 18px;
+    padding: 10px 40px;
+}
+.scroll-snap{
+    scroll-snap-align: center;
+}
+.scroll-snap-end{
+    scroll-snap-align: start;   
+}
+.empty-scroll-container{
+    height: 200px;
+    width:100%;
+}
+.circle{
+    height: 200px;
+    width:200px;
+    border-radius: 100%;
+    border: 10px black;
+    background-color: yellow;
+    margin-top: -100px;
+    margin-left: 40px;
+    padding: 45px;
+    font-weight: 1400;
+    font-size: 20px;    
+}
+.arrow{
+    height: 18px;
+    width: 9px;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    background-color: crimson;
+    float:right;
+    margin-top: 40px;
+}
+
 
 

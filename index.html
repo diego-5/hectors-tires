@@ -7,45 +7,55 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/main.css">
+        <link rel="stylesheet" href="/effect.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Ruda&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <div class="scroll-container">
-            <nav class="nav-bar">
-                <h1 class="logo">Hector's Tires</h1>
-                <ul class="nav-link-container">
-                    <li class="nav-link"><a href="#home">Home</a></li>
-                    <li class="nav-link"><a href="#home">About Us</a></li>
-                    <li class="nav-link"><a href="#home">Tires</a></li>
-                    <li class="nav-link"><a href="#home">Towing</a></li>
-                </ul>
-            </nav>
-            <div class="background-img"> <img src="/images/getts.webp"></div>
-            <div class="scroller">
-                <div class="about-us-container">
-                    <div class="about-us">
-                        <h2> About Us</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu ipsum eu nisl vulputate auctor ac non orci. Proin rhoncus interdum justo, in tristique quam ultrices sit amet. Curabitur non sapien quis ex venenatis posuere sit amet aliquam libero. Mauris maximus diam non nunc maximus pretium. Pellentesque ultrices, purus eu porttitor volutpat, turpis leo tincidunt nisi, sed tempus diam eros pretium neque. Ut venenatis viverra nisl id mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In finibus neque quis felis efficitur porttitor. In egestas eget leo in cursus. Fusce finibus dapibus efficitur. </p>
-                    
-                    </div>
+        <nav class="nav-bar">
+            <h1 class="logo">Hector's Tires</h1>
+            <ul class="nav-link-container">
+                <li class="nav-link"><a href="#home">Home</a></li>
+                <li class="nav-link"><a href="#home">About Us</a></li>
+                <li class="nav-link"><a href="#home">Tires</a></li>
+                <li class="nav-link"><a href="#home">Towing</a></li>
+            </ul>
+        </nav>
+
+        <div class="shop-img scroll-snap"></div>
+        
+        <div class="about-us-container scroll-snap">
+             <div class="about-image-container"> <!-- vw buggy background -->
+                <div class="about-us">
+                    <h2>MILES & MILES TO GO</h2>
+                    <p>New or used we provide peace of mind so you can keep driving.</p>
+                    <button class="specials-btn"
+                        type="button">
+                        View our Specials
+                    </button>
                 </div>
-                <div class="about-us-container">
-                    <div class="about-us">
-                        <h2> About Us</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu ipsum eu nisl vulputate auctor ac non orci. Proin rhoncus interdum justo, in tristique quam ultrices sit amet. Curabitur non sapien quis ex venenatis posuere sit amet aliquam libero. Mauris maximus diam non nunc maximus pretium. Pellentesque ultrices, purus eu porttitor volutpat, turpis leo tincidunt nisi, sed tempus diam eros pretium neque. Ut venenatis viverra nisl id mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In finibus neque quis felis efficitur porttitor. In egestas eget leo in cursus. Fusce finibus dapibus efficitur. </p>
-                    
-                    </div>
-                </div>
-                <div class="about-us-container">
-                    <div class="about-us">
-                        <h2> About Us</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu ipsum eu nisl vulputate auctor ac non orci. Proin rhoncus interdum justo, in tristique quam ultrices sit amet. Curabitur non sapien quis ex venenatis posuere sit amet aliquam libero. Mauris maximus diam non nunc maximus pretium. Pellentesque ultrices, purus eu porttitor volutpat, turpis leo tincidunt nisi, sed tempus diam eros pretium neque. Ut venenatis viverra nisl id mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In finibus neque quis felis efficitur porttitor. In egestas eget leo in cursus. Fusce finibus dapibus efficitur. </p>
-                    
-                    </div>
-                </div>
+                <div class="empty-scroll-container scroll-snap-end"></div> <!-- empty container to help scroll snap the brands page correctly-->
+            </div>
+            <div class="about-foot">
+                <div class="circle">Check out the brands we carry.<div class="arrow"></div><div class="arrow"></div><div class="arrow"></div></div>
+                <img class="brand-img" src="/images/tire-brands.png">
             </div>
         </div>
-       
-        
+
+        <div class="about-us-container scroll-snap">
+            <div class="about-us">
+                <h2> About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu ipsum eu nisl vulputate auctor ac non orci. Proin rhoncus interdum justo, in tristique quam ultrices sit amet. Curabitur non sapien quis ex venenatis posuere sit amet aliquam libero. Mauris maximus diam non nunc maximus pretium. Pellentesque ultrices, purus eu porttitor volutpat, turpis leo tincidunt nisi, sed tempus diam eros pretium neque. Ut venenatis viverra nisl id mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In finibus neque quis felis efficitur porttitor. In egestas eget leo in cursus. Fusce finibus dapibus efficitur. </p>
+            </div>
+        </div>
+        <div class="about-us-container scroll-snap">
+            <div class="about-us">
+                <h2> About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu ipsum eu nisl vulputate auctor ac non orci. Proin rhoncus interdum justo, in tristique quam ultrices sit amet. Curabitur non sapien quis ex venenatis posuere sit amet aliquam libero. Mauris maximus diam non nunc maximus pretium. Pellentesque ultrices, purus eu porttitor volutpat, turpis leo tincidunt nisi, sed tempus diam eros pretium neque. Ut venenatis viverra nisl id mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In finibus neque quis felis efficitur porttitor. In egestas eget leo in cursus. Fusce finibus dapibus efficitur. </p>
+            
+            </div>
+        </div>
         <script src="main.js" async defer></script>
     </body>
 </html>
