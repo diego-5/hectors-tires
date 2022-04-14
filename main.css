@@ -53,7 +53,7 @@ ul a:hover{
 .shop-img{
     display: flex;
     align-items: center;
-    background: url(/images/getts.webp) no-repeat center fixed;
+    background: url(images/getts.webp) no-repeat center fixed;
     background-size: cover;
     height: 100vh;
     width:100%;
@@ -69,7 +69,7 @@ ul a:hover{
 .about-image-container{
     display: flex;
     align-items: center;
-    background: url(/images/tire-wall.jpg) no-repeat center fixed;
+    background: url(images/tire-wall.jpg) no-repeat center fixed;
     background-size: cover;
     height: 70%;
     width:100%;
@@ -90,18 +90,22 @@ ul a:hover{
     overflow: hidden;
 }
 .specials-btn {
+    display: block;
     border: 0;
     line-height: 2.5;
     padding: 0 20px;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 1000;
     text-align: center;
-    color: #fff;
+    color: white;
     text-shadow: 1px 1px 1px #000;
     border-radius: 5px;
     background-color: rgba(220, 0, 0, 1);
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
-    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .specials-btn:hover {
